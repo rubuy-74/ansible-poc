@@ -1,0 +1,10 @@
+---
+- name: Install and configure NGINX
+  hosts: servers
+  become: yes # Use sudo to install packages
+  tasks:
+    - name: Install NGINX
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+        update_cache: yes
