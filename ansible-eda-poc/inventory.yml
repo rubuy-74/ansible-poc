@@ -1,0 +1,5 @@
+# the run playbook command requires an inventory.yml
+---
+all:
+  hosts:
+    localhost:

@@ -1,0 +1,15 @@
+---
+- name: Listen for GitHub Webhooks
+  hosts: all
+  sources:
+    - name: Listen for webhook events
+      ansible.eda.webhook:
+        host: 0.0.0.0
+        port: 8080
+
+  rules:
+    - name: Run playbook on a push event
+      condition: event.meta.headers['X-Github-Event'] == "push"
+      action:
+        run_playbook:
+          name: hello-eda.yml

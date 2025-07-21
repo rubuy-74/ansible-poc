@@ -1,0 +1,3 @@
+[submodule "ansible-awx-poc/awx-operator"]
+	path = ansible-awx-poc/awx-operator
+	url = https://github.com/ansible/awx-operator
