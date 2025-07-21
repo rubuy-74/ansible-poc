@@ -1,3 +1,6 @@
 [submodule "ansible-awx-poc/awx-operator"]
 	path = ansible-awx-poc/awx-operator
 	url = https://github.com/ansible/awx-operator
+[submodule "ansible-git-poc"]
+	path = ansible-git-poc
+	url = https://github.com/rubuy-74/ansible-git-poc
